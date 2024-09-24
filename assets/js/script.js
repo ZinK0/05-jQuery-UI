@@ -30,6 +30,9 @@ var handleFormSubmit = function (event) {
 formEl.on("submit", handleFormSubmit);
 
 // TODO: Add comments to describe the functionality of this jQuery UI interaction
+// This IIFE function has the skillNames list that will be used as autocomplete items
+// Then we use jQuery autocomplete method that will need to query the input box and method will
+// listen your keyword then suggest the words from the list that you give as source.
 $(function () {
   var skillNames = [
     "Bootstrap",
@@ -57,7 +60,7 @@ $(function () {
 });
 
 // TODO: Add comments to describe the functionality of this jQuery UI interaction
-// This IIFE function use the jQuery datepicker method. That method help us to pick the date 
+// This IIFE function use the jQuery datepicker method. That method help us to pick the date
 // easily with highly configurable plugin. In this case we use changeMonth and changeYear
 // for allowing user to choose the month and year.
 $(function () {
